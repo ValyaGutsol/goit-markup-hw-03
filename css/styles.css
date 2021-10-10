@@ -133,9 +133,7 @@ img {
 .header-mail:focus {
   color: var(--accent-color);
 }
-.header-item{
 
-}
 /*----Контейнер Герой----*/
 .section-hero {
   background-color: #2f303a;
@@ -255,13 +253,10 @@ img {
  font-size: 36px;
   line-height: 1.17;
   text-align: center;
-
   color: var(--secondary-title-color);
 }
 .masters-title {
   margin-bottom: 50px;
-
- 
 }
 
 .masters-list {
@@ -300,16 +295,12 @@ text-align: center;
 /*-----HEADER-----*/
 /*--шапка страницы портфолио--*/
 
-.header {
- /* padding-top: 32px;
-  padding-bottom: 32px;*/
-}
 .header-logo {
   margin-right: 70px;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
@@ -330,8 +321,7 @@ text-align: center;
 .header-list {
   display: flex;
 }
-.header-item:not(:last-child) {
-}
+
 .header-accent {
   color: var(--secondary-text-color);
 }
@@ -390,9 +380,8 @@ text-align: center;
 }
 
 .portfolio-item:not(:last-child) {
-
+  margin-right: 30px;
   padding-bottom: 30px;
-  padding-top: 30px;
   padding-left: 20px;  
 }
 
@@ -409,29 +398,28 @@ text-align: center;
 .portfolio-button:focus {
   color: #f5f4fa;
   background-color: var(--accent-color);
+
 }
 /* Портфолио  презентация*/
 
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 30px;
+ padding-left: 30px;
   padding-bottom:30px;
   padding-left:30px;
   padding-right: 30px;
 }
-.card-list{
+/*.card-list{
 margin-left: 30px;
 padding-top: 50px;
 padding-bottom: 94px;
-}
+}*/
 
 
   .card-title:not(:last-child){ 
-  
    font-size: 18px;
     line-height: 2px;
-    letter-spacing: 0.06em;
     color: var(--secondary-title-color);
     padding-bottom: 4px;
    outline: rgb(49, 21, 31);
@@ -439,28 +427,31 @@ padding-bottom: 94px;
   }
 
   .card-item {
-  flex-basis: calc(100% / 3 - 30px) ;
-    margin-left: 30px;
+     flex-basis: calc(100% / 3 - 30px) ;
+     display: block;
+     margin-left: 30px;
+     margin-bottom: 30px;
+     border: 1px colid #EEEEEE;
   } 
 
    .cards-name{
-/*margin: 30px;*/
-   padding: 20px;
+   padding-top:20px ;
+   padding-bottom: 20px;
    padding-left: 24px;
-  padding-right: 20px;
+   padding-right: 24px;
   box-shadow :rgba(146, 117, 117, 0.6);
   }
 
-     .card-text {
+  .card-text {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
   }
 
-    .card-text {
-padding: 20px; 
- box-shadow:sandybrown;
+  .card-text {
+    padding: 20px; 
+    box-shadow:sandybrown;
 }
 
 /*---ПОДВАЛ---*/
