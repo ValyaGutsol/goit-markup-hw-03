@@ -45,6 +45,18 @@ img {
 .link {
   text-decoration: none;
 }
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 .container {
   width: 1200px;
   margin-left: auto;
@@ -59,7 +71,7 @@ img {
   /*padding-top: 32px;
   padding-bottom: 32px;*/
   width: 1200px ;
-  border-bottom: 2px solid;
+  border-bottom: 0.2px solid;
 }
 
 .logo {
@@ -339,6 +351,13 @@ text-align: center;
   color: var(--accent-color);
   
 }
+/*.card-item{
+  position: absolute;
+ line-height: 0.8;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+}*/
 
 <!--авторизация-- > 
 
