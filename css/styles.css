@@ -307,6 +307,7 @@ text-align: center;
   border-bottom-color: blue;
   height: 80px;
 }
+
 .header-logo {
   margin-right: 70px;
 }
@@ -321,14 +322,10 @@ text-align: center;
 .header-navigation {
   display: flex;
   align-items: center;
-   box-sizing: border-box;
- /* margin-left: auto;
-  margin-right: auto;*/
 }
 .header-item{
   margin-right: 50px;
   color: rgba(33, 150, 243, 1);
-  ;
 }
 
 .header-list {
@@ -349,7 +346,6 @@ text-align: center;
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
-  
 }
 
 <!--авторизация-- > 
@@ -416,7 +412,7 @@ text-align: center;
 .card-list {
   display: flex;
   flex-wrap: wrap;
- padding-left: 30px;
+  padding-left: 30px;
   padding-bottom:30px;
   padding-left:30px;
   padding-right: 30px;
@@ -454,7 +450,7 @@ text-align: center;
     color: #757575;
   }
    .card-text  {
-    border: 1px solid #eeeeee;
+   border: 1px solid #eeeeee;
     height: 30px;
   }
 
