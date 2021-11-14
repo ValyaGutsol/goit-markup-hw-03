@@ -35,9 +35,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-/*address {
+  address {
 font-style:normal ;  
-}*/
+}
 
 /*убрали точки*/
 .list {
@@ -70,12 +70,18 @@ font-style:normal ;
 
 /*-----HEADER------*/
 
-.header {
+.header.container {
   width: 1200px ;
-
+   display: flex;
+   align-items: center;
 }
 
-
+.header-navigation {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 25px; 
+  align-items: center;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -84,37 +90,14 @@ font-style:normal ;
   margin-right: 70px;
   color: var(--accent-color);
 }
-
-.header-navigation {
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-left: 20px;
-}
-
-.header.container {
-  width: 1200px;
-  display: flex;
-}
-
 .header-list {
   display: flex;
 }
 .header-item:not(:last-child) {
   padding: left 30px; 
 }
-
 .header-accent {
   color: var(--secondary-text-color);
-}
-
-.header-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
- /* <svg width="400" height="300" style="outline: 2px dashed #2a2a2a;">
-  <line x1="20" y1="50" x2="380" y2="50" stroke="#2a2a2a" stroke-width="16" />*/
 }
 
 .header-link:hover,
@@ -127,7 +110,6 @@ font-style:normal ;
   display: flex;
   align-items: center;
 }
-
 .header-mail,
 .header-tel {
   display: block;
@@ -136,12 +118,66 @@ font-style:normal ;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  margin-left: auto;
+  margin-left: 50px;
   
 }
-
 .header-mail:hover,
 .header-mail:focus {
+  color: var(--accent-color);
+}
+   /*   HEADER PORTFOlIO    */
+   .header-logo {
+  margin-right: auto;
+  margin-right: auto;
+}
+.container-header  {
+  /*width: 1200px;*/
+  display: flex;
+ align-items: center;
+}
+ .header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(236, 236, 236, 1);
+  border-color: #2196f3;
+  height: 80px;
+}
+.header-navigation {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 25px; 
+  align-items: center;
+  
+}
+.header-logo {
+  margin-right: 70px;
+}
+/*.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}*/
+.header-item{
+  margin-right: 50px;
+  color: rgba(33, 150, 243, 1);
+}
+.header-list {
+  display: flex;
+}
+.header-accent {
+  color: var(--secondary-text-color);
+}
+.header-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-color);
 }
 
@@ -306,88 +342,7 @@ margin-top: 15px;
 text-align: center;
 }
 
-/*-----HEADER-----*/
-/*--шапка страницы портфолио--*/
-
-.container-header{
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(236, 236, 236, 1);
-  height: 80px;
-}
-
-.header-logo {
-  margin-right: 70px;
-}
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-color);
-}
-
-.header-navigation {
-  display: flex;
-  align-items: center;
-
-}
-.header-item{
-  margin-right: 50px;
-  color: rgba(33, 150, 243, 1);
-}
-
-.header-list {
-  display: flex;
-}
-
-.header-accent {
-  color: var(--secondary-text-color);
-}
-.header-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
-
-<!--авторизация-- > 
-
-.header-ring {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-}
-.header-mail,
-.header-tel {
-  font-weight: 500px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  margin-right: 30px;
-}
-
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-color);
-}
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
-}
-
 /* Портфолио  презентация*/
-.header-logo{
-  margin-right: auto;
-  margin-right: auto;
-}
 
 .section-portfolio{
   padding-top: 94px;
@@ -408,21 +363,33 @@ text-align: center;
   padding-left: 20px;  
 }
 
-.portfolio-button {
+.portfolio-button
+.portfolio-button-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
-
 }
-.portfolio-button:hover,
-.portfolio-button:focus {
+.portfolio-button{
+padding-top: 6px; 
+padding-left: 22px;
+padding-bottom: 6px;
+padding-right: 22px;
+}
+.portfolio-button-btn{
+  width: 73px;
+  height: 38px;
+  border-radius:4px;
+  color: rgba(33, 150, 243, 1);
+}
+.portfolio-button-btn:hover,
+.portfolio-button-btn:focus {
   color: #f5f4fa;
   background-color: var(--accent-color);
 }
-/* Портфолио  презентация*/
+/* Портфолио  карточки*/
 
 .card-list {
   display: flex;
@@ -430,7 +397,7 @@ text-align: center;
   padding-bottom:30px;
   margin-left: -30px;
   margin-bottom: -30px;
-  background-color: chartreuse;
+ /* background-color: chartreuse;*/
 }
 
   .card-title:not(:last-child){ 
@@ -450,10 +417,8 @@ text-align: center;
     border-left: rgba(238, 238, 238, 1);
     border-right: rgba(238, 238, 238, 1);
     border-bottom: rgba(238, 238, 238, 1);
-    background-color: cadetblue;
+   /* background-color: cadetblue;*/
 }
-
-
 
    .cards-name{
    padding-top:20px ;
@@ -469,7 +434,7 @@ text-align: center;
    padding-bottom: 20px;
    padding-left: 24px;
    padding-right: 24px;
-    background-color: blueviolet;
+  /*  background-color: blueviolet;*/
   }
 
   .card-text {
