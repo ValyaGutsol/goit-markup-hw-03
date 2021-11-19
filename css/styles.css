@@ -82,7 +82,6 @@ html {
   width: 1200px ;
    display: flex;
    align-items: center;
-   
 }
 
 .header-navigation {
@@ -279,11 +278,12 @@ html {
 }
 /* ---  Примеры работ---*/
 .container-gallery {
- /* padding-top: 94px;
-  padding-bottom: 94px;*/
+
+  padding-bottom: 94px;
 }
 .gallery-title {
-  margin-bottom: 50px; 
+ margin-bottom: 50px;
+ 
 }
 .gallery-title {
   font-size: 36px;
@@ -316,7 +316,6 @@ html {
   color: var(--secondary-title-color);
 }
 .masters-title {
- /* margin-top: 50px;*/
   margin-bottom: 50px;
 }
 .masters-list {
