@@ -5,6 +5,12 @@ body {
   color: #000000;
   margin: 0px;
 }
+/*body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}*/
 
 :root {
   --main-title-color: #ffffff;
@@ -48,6 +54,7 @@ font-style:normal ;
 .link {
   text-decoration: none;
 }
+/*скрыли заголовки*/
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -231,6 +238,7 @@ html {
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
+  border: none;
   color: var(--main-title-color);
   background-color: var(--accent-color);
 }
@@ -390,54 +398,54 @@ position: absolute;
 }
 
 .portfolio-button {
-    display: block;  
-  background-color:rgba(33, 150, 243, 1) ;
-  background: rgba(255, 255, 255, 1);
+  display: block;  
+  color: #212121;
+  background-color:#2196f3;
+  font-style: normal;
   cursor: pointer;
   border: transparent;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
   line-height: 1.62;
   padding: 6px 22px;
 }
-.btn:hover,
-.btn:focus {
-  color: rgba(33, 33, 33, 1);
-  color:var(--main-title-color);
-  background-color: var(--accent-color); 
-  font-style: normal;
-  border: transparent;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  border-radius:4px; 
-  padding: 6px 22px; 
-}     
 
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: rgba(245, 244, 250, 1);
-
   background-color: var(--accent-color);
+}
+.portfolio-buttons {
+  color: #212121;
+  background-color: #F5F4FA;
   font-style: normal;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
-  border-radius:4px;
-  border-color: #f5f4fa;
-  padding: 6px 22px; 
-}  
+  letter-spacing: 0.03em; 
+  line-height: 1.62;
+  padding: 6px 22px;
+}
 
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
+  color:  #2196f3;
+  color: rgba(245, 244, 250, 1);
+  color:var(--main-title-color);
+  background-color: var(--accent-color); 
+
+}
 .portfolio-list .item:not(:last-child) {
   margin-right: 8px;
 }                         
 .portfolio-button
-.portfolio-button-btn {
+.portfolio-buttons {
   margin-bottom: 50px ;
 }
 
@@ -448,7 +456,7 @@ position: absolute;
   flex-wrap: wrap;
   padding-bottom: 30px;
   margin-left: -30px;
-  margin-bottom: -30px;
+/*  margin-bottom: -30px;*/
 }
 .card-item{
     margin-left: 30px;
@@ -471,22 +479,17 @@ position: absolute;
     outline: rgb(49, 21, 31);
   }
 
-
   .cards-name {
     padding-top:20px ;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    box-shadow :rgba(146, 117, 117, 0.6);
+    /*box-shadow :rgba(146, 117, 117, 0.6);*/
     border: 1px solid #eeeeee;
   }
 
   .cards-name-card {
-    padding: 24px,20px;
-    padding-top:20px ;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 24px 20px;
     border: 1px solid #eeeeee;
   
   }
